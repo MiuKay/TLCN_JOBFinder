@@ -6,8 +6,8 @@
 
 Dự án này được thực hiện bởi sinh viên:
 
-- **Võ Chí Khương** - MSSV: 21110221
-- **Phạm Ngọc Đăng Khoa** - MSSV: 21110214
+- **Võ Chí Khương**        - MSSV: 21110221
+- **Phạm Ngọc Đăng Khoa**  - MSSV: 21110214
 
 ## Tính Năng Chính
 
@@ -138,8 +138,8 @@ Dự án sử dụng các công nghệ hiện đại để xây dựng và phát
 
 ## Đội Ngũ Phát Triển
 
-- **Võ Chí Khương** - MSSV: 21110221
-- **Phạm Ngọc Đăng Khoa** - MSSV: 21110214
+- **Võ Chí Khương**        - MSSV: 21110221
+- **Phạm Ngọc Đăng Khoa**  - MSSV: 21110214
 
 ## Liên Hệ
 
