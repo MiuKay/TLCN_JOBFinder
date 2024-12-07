@@ -1,0 +1,11 @@
+.box-img-preview{
+    height: 46px;
+    border: 2px solid #eee;
+    width: 40%;
+    background: no-repeat center center;
+    background-size: cover;
+    cursor: pointer;
+}
+.ReactModal__Overlay{
+    z-index: 10000 !important;
+}
