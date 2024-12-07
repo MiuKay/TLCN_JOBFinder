@@ -27,11 +27,11 @@ Website **Job Finder** cung cấp các tính năng chính sau:
 
 4. **Quản lý hồ sơ ứng viên**:
    - Ứng viên có thể tạo và quản lý hồ sơ cá nhân, bao gồm thông tin cá nhân, kinh nghiệm làm việc, kỹ năng, và các chứng chỉ.
-   - Hồ sơ được tự động phân loại và sắp xếp để dễ dàng ứng tuyển.
+   - Ứng viên có thể chia sẻ CV hay cũng có thể nhận các công việc gợi ý qua mail.
 
-5. **Thông báo và Cập nhật**:
-   - Người dùng nhận thông báo về các công việc mới phù hợp với hồ sơ của họ.
-   - Nhà tuyển dụng nhận thông báo khi có ứng viên mới nộp CV cho công việc của họ.
+5. **Cập nhật**:
+   - Người dùng quản lý được hồ sơ của mình đã được xem hay chưa.
+   - Nhà tuyển dụng nhận xem được thống kê khi có ứng viên mới nộp CV cho công việc của họ.
 
 ## Các Vai Trò Người Dùng
 
@@ -41,7 +41,7 @@ Website **Job Finder** có 4 vai trò người dùng chính, mỗi vai trò sẽ
    - **Tạo hồ sơ cá nhân**: Cập nhật thông tin cá nhân, kinh nghiệm làm việc, kỹ năng và các chứng chỉ.
    - **Tìm kiếm công việc**: Tìm kiếm công việc theo các tiêu chí như ngành nghề, vị trí, mức lương, v.v.
    - **Nộp hồ sơ xin việc**: Gửi hồ sơ và thư xin việc cho nhà tuyển dụng.
-   - **Nhận thông báo**: Nhận thông báo về các công việc mới phù hợp với hồ sơ.
+   - **Nhận mail**: Nhận mail về các công việc mới phù hợp với hồ sơ khi chia sẻ CV.
 
 ### 2. **Người Tuyển Dụng**:
    - **Đăng tin tuyển dụng**: Đăng các công việc tuyển dụng để tìm ứng viên phù hợp.
@@ -55,8 +55,8 @@ Website **Job Finder** có 4 vai trò người dùng chính, mỗi vai trò sẽ
    - **Quản lý danh sách tuyển dụng**: Quản lý các tin tuyển dụng của công ty và các ứng viên nộp hồ sơ.
 
 ### 4. **Admin**:
-   - **Quản lý người dùng**: Admin có thể tạo, chỉnh sửa, xóa tài khoản người dùng (ứng viên, nhà tuyển dụng, công ty).
-   - **Quản lý tin tuyển dụng và CV**: Admin có thể duyệt hoặc xóa các tin tuyển dụng và CV không hợp lệ.
+   - **Quản lý người dùng**: Admin có thể tạo, xem, chặn tài khoản người dùng (ứng viên, nhà tuyển dụng, công ty).
+   - **Quản lý tin tuyển dụng**: Admin có thể duyệt hoặc từ chối các tin tuyển dụng.
    - **Quản lý dữ liệu hệ thống**: Admin có quyền kiểm tra và quản lý toàn bộ dữ liệu người dùng và thông tin trên hệ thống.
    - **Xem thống kê**: Admin có thể xem thống kê và báo cáo về hoạt động của nền tảng.
 
@@ -65,7 +65,7 @@ Website **Job Finder** có 4 vai trò người dùng chính, mỗi vai trò sẽ
 Dự án sử dụng các công nghệ hiện đại để xây dựng và phát triển website **Job Finder**:
 
 - **Frontend**: 
-  - HTML, CSS, JavaScript
+  - HTML, CSS, SCSS, JavaScript
   - ReactJS (hoặc các framework khác nếu sử dụng)
   - Tailwind CSS (hoặc các framework CSS khác để tạo giao diện đẹp)
   
@@ -75,6 +75,7 @@ Dự án sử dụng các công nghệ hiện đại để xây dựng và phát
   
 - **Authentication**: 
   - JWT (JSON Web Token) cho hệ thống bảo mật và xác thực người dùng.
+  - Mã hóa mật khẩu
 
 - **Sàn Lọc CV Tự Động**:
   - Sử dụng AI/Thuật toán phân tích CV (có thể sử dụng các thư viện hoặc API AI như TensorFlow hoặc các công cụ xử lý ngôn ngữ tự nhiên để trích xuất thông tin từ CV).
@@ -89,13 +90,13 @@ Dự án sử dụng các công nghệ hiện đại để xây dựng và phát
     ```
 2. Di chuyển vào thư mục backend:
     ```bash
-    cd backend
+    cd TLCN_JobFinderBE
     ```
 3. Cài đặt các dependencies:
     ```bash
     npm install
     ```
-4. Cấu hình thông tin kết nối cơ sở dữ liệu (MongoDB/MySQL) trong file `.env`.
+4. Cấu hình thông tin kết nối cơ sở dữ liệu trong file `.env`.
 5. Chạy server backend:
     ```bash
     npm start
@@ -105,13 +106,14 @@ Dự án sử dụng các công nghệ hiện đại để xây dựng và phát
 
 1. Di chuyển vào thư mục frontend:
     ```bash
-    cd frontend
+    cd TLCN_JobFinderFE
     ```
 2. Cài đặt các dependencies:
     ```bash
     npm install
     ```
-3. Chạy server frontend:
+3. Cấu hình thông tin kết nối cơ sở dữ liệu trong file `.env`.
+4. Chạy server frontend:
     ```bash
     npm start
     ```
@@ -122,7 +124,7 @@ Dự án sử dụng các công nghệ hiện đại để xây dựng và phát
 2. **Đối với ứng viên**:
    - Tạo tài khoản và đăng nhập.
    - Tạo hồ sơ xin việc và nộp đơn cho các công việc phù hợp.
-   - Nhận thông báo khi có công việc mới phù hợp với hồ sơ.
+   - Quản lý được hồ sơ đã xem hay chưa.
 
 3. **Đối với nhà tuyển dụng**:
    - Đăng ký tài khoản và đăng nhập.
