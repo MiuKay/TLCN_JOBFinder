@@ -90,7 +90,7 @@ Dự án sử dụng các công nghệ hiện đại để xây dựng và phát
     ```
 2. Di chuyển vào thư mục backend:
     ```bash
-    cd backend
+    cd TLCN_JobFinderBE
     ```
 3. Cài đặt các dependencies:
     ```bash
@@ -106,13 +106,14 @@ Dự án sử dụng các công nghệ hiện đại để xây dựng và phát
 
 1. Di chuyển vào thư mục frontend:
     ```bash
-    cd frontend
+    cd TLCN_JobFinderFE
     ```
 2. Cài đặt các dependencies:
     ```bash
     npm install
     ```
-3. Chạy server frontend:
+3. Cấu hình thông tin kết nối cơ sở dữ liệu trong file `.env`.
+4. Chạy server frontend:
     ```bash
     npm start
     ```
