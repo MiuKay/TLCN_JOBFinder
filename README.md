@@ -30,7 +30,7 @@ Website **Job Finder** cung cấp các tính năng chính sau:
    - Ứng viên có thể chia sẻ CV hay cũng có thể nhận các công việc gợi ý qua mail.
 
 5. **Cập nhật**:
-   - Người dùng quản lý được hồ sơ của mình đã được xem hay chưa.
+   - Người dùng quản lý được hồ sơ của mình đã được nhà tuyển dụng xem hay chưa.
    - Nhà tuyển dụng nhận xem được thống kê khi có ứng viên mới nộp CV cho công việc của họ.
 
 ## Các Vai Trò Người Dùng
