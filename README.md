@@ -91,7 +91,7 @@ File này hướng dẫn cách tải xuống, cài đặt và sử dụng Node.j
 ## Yêu cầu
 
 - **nvm** (Node Version Manager) cần được cài đặt trên hệ thống của bạn.  
-  Nếu chưa cài đặt, bạn có thể tham khảo [hướng dẫn cài đặt nvm tại đây](https://github.com/nvm-sh/nvm#installing-and-updating).
+  Nếu chưa cài đặt, bạn có thể tham khảo [hướng dẫn cài đặt nvm tại đây](https://github.com/coreybutler/nvm-windows/releases).
 
 
 ### 1. Tải xuống và cài đặt Node.js phiên bản 16.0.0
@@ -100,6 +100,7 @@ Chạy lệnh sau trong terminal để tải xuống và cài đặt Node.js phi
 
 ```bash
 nvm install 16.0.0
+```
 
 ### 2. Chuyển đổi và dùng Node.js phiên bản 16.0.0
 
@@ -107,8 +108,8 @@ Chạy lệnh sau trong terminal để chuyển và dùng Node.js phiên bản 1
 
 ```bash
 nvm use 16.0.0
-
-### Cài Đặt Backend
+```
+## Cài Đặt Backend
 
 1. Clone repository về máy tính của bạn:
     ```bash
