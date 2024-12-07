@@ -95,7 +95,7 @@ Dự án sử dụng các công nghệ hiện đại để xây dựng và phát
     ```bash
     npm install
     ```
-4. Cấu hình thông tin kết nối cơ sở dữ liệu (MongoDB/MySQL) trong file `.env`.
+4. Cấu hình thông tin kết nối cơ sở dữ liệu trong file `.env`.
 5. Chạy server backend:
     ```bash
     npm start
